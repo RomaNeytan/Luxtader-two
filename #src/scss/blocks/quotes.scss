@@ -1,0 +1,239 @@
+.quotes {
+    padding: 65px 0;
+    &__slider {
+    }
+
+    &__control {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    // Center
+
+    &__main {
+        padding: 50px 0;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &-block {
+        &-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &__iccon {
+                padding-right: 15px;
+            }
+            &__title {
+                font-size: 35px;
+                line-height: 25px;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 3px;
+            }
+        }
+
+        &-block {
+            & + & {
+                margin-top: 25px;
+            }
+            &__date {
+                font-size: 12px;
+                color: #bb9c66;
+                margin-bottom: 7px;
+            }
+
+            &__text {
+                &_und {
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                font-size: 15px;
+                color: #333333;
+                line-height: 25px;
+            }
+        }
+    }
+
+    &__footer {
+    }
+
+    &__row {
+    }
+
+    &__description {
+        color: #333333;
+        line-height: 25px;
+        font-size: 15px;
+        width: 100%;
+        max-width: 440px;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+    }
+
+    &-form {
+        display: flex;
+        align-items: center;
+        margin-left: 45px;
+        position: relative;
+        width: 440px;
+        &-email {
+            flex-grow: 1;
+            &__input {
+                width: 100%;
+                background: none;
+                border: 3px solid #bb9c66;
+                padding: 10px 15px;
+                font-size: 15px;
+                line-height: 25px;
+
+                &::placeholder {
+                    color: #4f4f4f;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &-submit {
+            position: absolute;
+            right: 20px;
+
+            &:before {
+                content: " ";
+                display: block;
+                width: 1px;
+                height: 34px;
+                background: #bb9c66;
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+            }
+
+            &:after {
+                content: " ";
+                display: inline-block;
+                width: 22px;
+                height: 16px;
+                background: url("../../img/quotes/arrow-right.png") no-repeat right;
+            }
+            &__input {
+                margin-left: 10px;
+                border: 0;
+                background: none;
+                font-family: "pfdintextcondpro";
+                font-weight: 500;
+                font-size: 22px;
+                color: #1c242a;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.slider-quotes {
+    &-item {
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        &__iccon {
+        }
+
+        &__text {
+            width: 100%;
+            max-width: 580px;
+            margin: 0 auto;
+            padding-left: 45px;
+        }
+
+        &__description {
+            font-size: 25px;
+            line-height: 30px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        &__author {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        &__date {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+.row-quotes {
+    &__arrow {
+        &_left {
+            &:before {
+                content: " ";
+                display: block;
+                width: 100px;
+                height: 1px;
+                background: #bb9c66;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:after {
+                content: " ";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid #bb9c66;
+                position: absolute;
+                top: 50%;
+                left: 105px;
+                transform: translateY(-50%);
+            }
+        }
+
+        &_right {
+            &:before {
+                content: " ";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid #bb9c66;
+                position: absolute;
+                top: 50%;
+                right: 105px;
+                transform: translateY(-50%);
+            }
+            &:after {
+                content: " ";
+                display: block;
+                width: 100px;
+                height: 1px;
+                background: #bb9c66;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

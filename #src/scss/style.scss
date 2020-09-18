@@ -1,0 +1,76 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "fonts.scss";
+@import "vars.scss";
+@import "burger.scss";
+@import "btn.scss";
+@import "ibg.scss";
+@import "slick.scss";
+@import "section-header.scss";
+// Blocks
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/lots.scss";
+@import "blocks/products.scss";
+@import "blocks/services.scss";
+@import "blocks/quotes.scss";
+@import "blocks/footer.scss";
+
+
+
+.global-wrapper{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+// Основная сетка
+
+.container{
+    width: 100%;
+    max-width:955px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: "PT Sans";
+    color:$main-color;
+    font-size: 15px;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0 0 4px;
+}
+

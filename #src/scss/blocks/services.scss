@@ -1,0 +1,74 @@
+.services {
+    background: #1c242a;
+    padding: 50px 0 75px;
+    &__row {
+        padding-top: 45px;
+        display: flex;
+        align-items: center;
+        margin: 0 -35px;
+    }
+
+    &__column {
+        padding: 0 35px;
+        flex: 0 1 33.33333%;
+    }
+
+    &-item {
+        text-align: center;
+        &__iccon {
+            img{
+                width: 125px;
+                height: 125px;
+            }
+        }
+
+        &__title {
+            font-family: "pfdintextcondpro";
+            font-weight: 500;
+            margin: 25px 0;
+            font-size: 21px;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            font-size: 15px;
+            line-height: 25px;
+            color: #bb9c66;
+            margin-bottom: 20px;
+        }
+
+        &__suptitle {
+            font-family: "pfdintextcondpro";
+            font-weight: 500;
+            font-size: 21px;
+            color: $white;
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: 2px;
+
+            &:before {
+                content: " ";
+                display: block;
+                height: 1px;
+                width: 50px;
+                background: #bb9c66;
+                position: absolute;
+                top:50%;
+                left:0;
+                transform: translateY(-50%);
+            }
+            &:after {
+                content: " ";
+                display: block;
+                height: 1px;
+                width: 50px;
+                background: #bb9c66;
+                position: absolute;
+                top:50%;
+                right:0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

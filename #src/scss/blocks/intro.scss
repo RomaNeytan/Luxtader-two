@@ -1,0 +1,127 @@
+.intro {
+    position: relative;
+    margin-bottom: 85px;
+    @media(max-width:767px){
+        margin-bottom: 65px;
+    }
+    &__inner {
+        
+    }
+
+    &__item {
+    }
+
+    &__control {
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform: translate3d(-50%,50%,0);
+    }
+}
+.container {
+}
+.item-intro {
+    position: relative;
+    padding: 34px 0 100px;
+    text-align: center;
+    &__bg {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &__iccon {
+    }
+
+    &__content {
+        position: relative;
+        z-index: 4;
+    }
+
+    &__title {
+        font-family: "ceremonious_one";
+        font-size: 40px;
+        line-height: 25px;
+        letter-spacing: normal;
+        color: #bb9c66;
+        margin-bottom: 23px;
+        font-weight: normal;
+    }
+
+    &__suptitle {
+        font-family: "pfdintextcondpro";
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: normal;
+        line-height: 35px;
+        letter-spacing: 5.25px;
+        color: $white;
+        margin-bottom: 22px;
+
+        @media(max-width:430px){
+            font-size: 26px;
+        }
+    }
+
+    &__description {
+        font-size: 15px;
+        line-height: 25px;
+        color: $white;
+        width: 100%;
+        max-width:688px;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        margin-top: 45px;
+        position: relative;
+        display: block;
+    }
+}
+
+.control-intro {
+    &__row { 
+        width: 75px;
+        height: 75px;
+        display: block;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(45deg);
+        position: relative;
+    }
+
+    &__arrow {
+        width: 14px;
+        height: 24px;
+        display: block;
+        transform: rotate(-45deg);
+        position: absolute;
+        
+        &_left {
+            left:0;
+            background: url("../../img/mainslider/left-arrow.png")no-repeat left center;
+        }
+
+        &_right {
+            right:0;
+            background: url("../../img/mainslider/right-arrow.png")no-repeat right center;
+        }
+    }
+
+    &__decor {
+        animation: decor 5s infinite linear;
+    }
+
+    @keyframes decor{
+        0%{
+
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
