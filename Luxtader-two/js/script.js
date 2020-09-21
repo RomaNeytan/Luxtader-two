@@ -146,3 +146,29 @@ $(function () {
         $(slider).slick('slickNext');
     });
 });
+
+// Data-scroll
+
+$(function () {
+    $("[data-scroll]").on("click", function (event) {
+        event.preventDefault();
+
+        let scrollId = $(this).data("scroll");
+        let elementOffset = $(scrollId).offset().top;
+
+        $(".header-menu").removeClass("_active");
+        $(".nav-toggle").removeClass("_active");
+
+        $("html,body").animate({
+            scrollTop: elementOffset - 70
+        }, 700);
+
+    });
+});
+
+
+
+
+
+
+

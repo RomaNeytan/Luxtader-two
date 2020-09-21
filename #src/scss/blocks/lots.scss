@@ -1,8 +1,12 @@
 .lots {
     margin-top: 55px;
     margin-bottom: 100px;
+
+
+
     @media (max-width: 767px) {
         margin-top: 0;
+        margin-bottom: 50px;
     }
     &__inner {
         display: flex;

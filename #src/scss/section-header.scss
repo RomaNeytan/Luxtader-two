@@ -27,7 +27,7 @@
         letter-spacing: 5.25px;
         text-transform: uppercase;
         color: #1c242a;
-        margin: 27px 0 21px;
+        margin: 27px 0 0;
 
         &_services{
             color:$white;
@@ -35,7 +35,7 @@
 
         @media(max-width:475px){
             font-size: 31px;
-            margin: 27px 0 0;
+            margin: 15px 0 0;
         }
         @media(max-width:380px){
             font-size: 25px
@@ -78,7 +78,7 @@
             right: -17px;
 
             @media(max-width:360px){
-                display: none;
+                
             }
         }
 
@@ -94,6 +94,10 @@
 
     &__iccon {
         padding: 0 118px;
+
+        @media(max-width:575px){
+            padding: 0 85px 0 95px;
+        }
     }
 
     &__right {
@@ -127,7 +131,7 @@
             left: -17px;
 
             @media(max-width:360px){
-                display: none;
+                
             }
         }
 

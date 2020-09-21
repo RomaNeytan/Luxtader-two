@@ -1,16 +1,38 @@
 .services {
     background: #1c242a;
     padding: 50px 0 75px;
+
+    @media(max-width:575px){
+        padding: 25px 0 35px;
+    }
     &__row {
         padding-top: 45px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         margin: 0 -35px;
+
+        @media(max-width:990px){
+            padding-top: 0;
+        }
     }
 
     &__column {
         padding: 0 35px;
         flex: 0 1 33.33333%;
+
+        @media(max-width:990px){
+            flex:0 1 50%;
+            max-width:400px;
+            margin: 0 auto 45px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        @media(max-width:575px){
+            flex:0 1 100%;
+        }
     }
 
     &-item {
@@ -29,6 +51,10 @@
             font-size: 21px;
             color: $white;
             text-transform: uppercase;
+
+            @media(max-width:767px){
+                margin: 10px 0;
+            }
         }
 
         &__description {
@@ -36,9 +62,14 @@
             line-height: 25px;
             color: #bb9c66;
             margin-bottom: 20px;
+
+            @media(max-width:767px){
+                margin-bottom: 10px;
+            }
         }
 
         &__suptitle {
+            display: block;
             font-family: "pfdintextcondpro";
             font-weight: 500;
             font-size: 21px;
@@ -46,6 +77,7 @@
             text-transform: uppercase;
             position: relative;
             letter-spacing: 2px;
+
 
             &:before {
                 content: " ";
@@ -57,6 +89,16 @@
                 top:50%;
                 left:0;
                 transform: translateY(-50%);
+
+                @media(max-width:990px){
+                    left:30px;
+                }
+                @media(max-width:710px){
+                    left:0;
+                }
+                @media(max-width:575px){
+                    left:15px;
+                }
             }
             &:after {
                 content: " ";
@@ -68,6 +110,16 @@
                 top:50%;
                 right:0;
                 transform: translateY(-50%);
+
+                @media(max-width:990px){
+                    right:30px;
+                }
+                @media(max-width:710px){
+                    right:0;
+                }
+                @media(max-width:575px){
+                    right:15px;
+                }
             }
         }
     }

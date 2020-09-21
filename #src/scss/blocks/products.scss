@@ -1,5 +1,14 @@
 .products {
     padding-bottom: 120px;
+    
+
+    @media(max-width:767px){
+        padding-bottom: 60px;
+    }
+
+    @media(max-width:575px){
+        padding-bottom: 30px;
+    }
     &__inner {
         display: flex;
         flex-wrap: wrap;
@@ -10,6 +19,30 @@
         flex: 0 1 33.33333%;
         padding: 0 50px;
         position: relative;
+
+        @media(max-width:990px){
+            flex:0 1 50%;
+            max-width:400px;
+            margin: 0 auto;
+        }
+
+        @media(max-width:640px){
+            flex:0 1 100%;
+            max-width:340px;
+            margin: 0 auto;
+
+            &:nth-child(7) {
+                &:after {
+                    display: block;
+                }
+            }
+    
+            &:nth-child(8) {
+                &:after {
+                    display: block;
+                }
+            }
+        }
 
         &:nth-child(7) {
             &:after {
@@ -45,15 +78,31 @@
         padding-left: 130px;
         position: relative;
 
+        @media(max-width:700px){
+            padding-left: 0;
+
+            &:before{
+                height: 0;
+            }
+        }
+
+        @media(max-width:767px){
+            margin-top: 40px;
+        }
+
         &:before {
             content: " ";
             display:block;
             width: 85px;
-            height: 375px;
+            height: 400px;
             background: url("../../img/products/footer-bg.png")no-repeat left;
             position: absolute;
             left:0;
-            top:0;
+            top:-10px;
+
+            @media(max-width:726px){
+                height: 450px;
+            }
         }
     }
 
@@ -79,7 +128,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(28, 36, 42, 0.7);
         position: absolute;
         left: 0;
         top: 0;

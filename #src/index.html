@@ -4,15 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp сборка</title>
+    <title>Luxtrader</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Luxtrader lots">
+    <meta name="keywords" content="Lots,money,exlusive,services">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <div class="global-wrapper">
         @@include('_header.html')
         <main class="page">
-            <section class="intro">
+            <section class="intro" id="introH">
                 <div class="intro__inner">
                     <div class="intro__slider">
                         <div class="intro__item item-intro">
@@ -50,7 +60,9 @@
                                             <p>Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный и
                                                 автоматизированный сервис по покупке и продаже, а также выставлению
                                                 лотов на
-                                                аукцион</p>
+                                                аукцион, предоставляем личные кабинеты, а также оказываем сопутствубщие
+                                                услуги с
+                                                продажей редких и дорогих вещей</p>
                                         </div>
                                         <div class="item-intro__btn">
                                             <a href="#" class="btn"><span>Присоединится</span></a>
@@ -58,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="item-intro__bg ibg">
-                                    <img class="item-intro__iccon" src="img/mainslider/bg-2.png" alt="Background">
+                                    <img class="item-intro__iccon" src="img/mainslider/bg.png" alt="Background">
                                 </div>
                             </div>
                         </div>
@@ -80,13 +92,14 @@
                     </div>
                     <div class="section-header__decor">
                         <div class="section-header__left"><span></span></div>
-                        <div class="section-header__iccon"><img src="img/section-header/watchIcon.png" alt="Watch"></div>
+                        <div class="section-header__iccon"><img src="img/section-header/watchIcon.png" alt="Watch">
+                        </div>
                         <div class="section-header__right"><span></span></div>
                     </div>
                 </div>
             </div>
             <!-- Lots -->
-            <div class="lots">
+            <div class="lots" id="lots">
                 <div class="container">
                     <div class="lots__inner" id="lots__slider">
                         <div class="lots__column">
@@ -296,9 +309,11 @@
                     <!-- Lots footer -->
                     <div class="lots__footer">
                         <div class="lots__control control-lots">
-                            <div class="control-lots__arrow control-lots__arrow_left"><img src="img/lots/left-arrow.png" alt="Arrow"></div>
+                            <div class="control-lots__arrow control-lots__arrow_left"><img src="img/lots/left-arrow.png"
+                                    alt="Arrow"></div>
                             <a href="#" class="control-lots__link">Все Лоты</a>
-                            <div class="control-lots__arrow control-lots__arrow_right"><img src="img/lots/right-arrow.png" alt="Arrow"></div>
+                            <div class="control-lots__arrow control-lots__arrow_right"><img
+                                    src="img/lots/right-arrow.png" alt="Arrow"></div>
                         </div>
                     </div>
                 </div>
@@ -309,8 +324,10 @@
                     <div class="products__inner">
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item1.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img1.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item1.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img1.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Часы</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -322,8 +339,10 @@
                         <!-- 2 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item2.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img2.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item2.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img2.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Ювелирные Изделия</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -335,8 +354,10 @@
                         <!-- 3 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item3.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img3.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item3.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img3.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Автотранспорт и лодки</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -348,8 +369,10 @@
                         <!-- 4 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item4.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img4.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item4.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img4.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Аксуссуары</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -361,8 +384,10 @@
                         <!-- 5 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item5.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img5.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item5.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img5.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Недвижимость</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -374,8 +399,10 @@
                         <!-- 6 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item6.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img6.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item6.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img6.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Hi-Tech</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -387,8 +414,10 @@
                         <!-- 7 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item7.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img7.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item7.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img7.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Одежда и обувь</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -400,8 +429,10 @@
                         <!-- 8 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item8.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img8.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item8.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img8.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Предметы искусства</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -413,8 +444,10 @@
                         <!-- 9 -->
                         <div class="products__column">
                             <a href="#" class="products-item">
-                                <div href="#" target="_blank" class="products-item__img ibg"><img src="img/products/item9.png" alt=""></div>
-                                <div href="#" class="products-item__iccon"><img src="img/products/img9.png" alt=""></div>
+                                <div href="#" target="_blank" class="products-item__img ibg"><img
+                                        src="img/products/item9.png" alt=""></div>
+                                <div href="#" class="products-item__iccon"><img src="img/products/img9.png" alt="">
+                                </div>
                                 <div href="#" class="products-item__title">Алкоголь и еда</div>
                                 <div class="products-item__figure">
                                     <span class="products-item__figure_1"></span>
@@ -446,7 +479,7 @@
                 </div>
             </div>
             <!-- Services -->
-            <section class="services">
+            <section class="services" id="projects">
                 <div class="container">
                     <div class="section-header">
                         <div class="container">
@@ -456,7 +489,8 @@
                             </div>
                             <div class="section-header__decor">
                                 <div class="section-header__left"><span></span></div>
-                                <div class="section-header__iccon"><img src="img/section-header/watchIcon2.png" alt="Watch">
+                                <div class="section-header__iccon"><img src="img/section-header/watchIcon.png"
+                                        alt="Watch">
                                 </div>
                                 <div class="section-header__right"><span></span></div>
                             </div>
@@ -471,7 +505,7 @@
                                 <div class="services-item__description">
                                     <p>Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный </p>
                                 </div>
-                                <div class="services-item__suptitle">Подробнее</div>
+                                <a href="#" class="services-item__suptitle">Подробнее</a>
                             </div>
                         </div>
                         <div class="services__column">
@@ -481,7 +515,7 @@
                                 <div class="services-item__description">
                                     <p>Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный </p>
                                 </div>
-                                <div class="services-item__suptitle">Подробнее</div>
+                                <a href="#" class="services-item__suptitle">Подробнее</a>
                             </div>
                         </div>
                         <div class="services__column">
@@ -491,14 +525,14 @@
                                 <div class="services-item__description">
                                     <p>Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный </p>
                                 </div>
-                                <div class="services-item__suptitle">Подробнее</div>
+                                <a href="#" class="services-item__suptitle">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Quotes -->
-            <section class="quotes">
+            <section class="quotes" id="partners">
                 <div class="container">
                     <div class="section-header">
                         <div class="container">
@@ -508,12 +542,13 @@
                             </div>
                             <div class="section-header__decor">
                                 <div class="section-header__left"><span></span></div>
-                                <div class="section-header__iccon"><img src="img/section-header/watchIcon.png" alt="Watch"></div>
+                                <div class="section-header__iccon"><img src="img/section-header/watchIcon.png"
+                                        alt="Watch"></div>
                                 <div class="section-header__right"><span></span></div>
                             </div>
                         </div>
                     </div>
-                    <div class="quotes__slider slider-quotes" id = "quotes__slide">
+                    <div class="quotes__slider slider-quotes" id="quotes__slide">
                         <div class="slider-quotes-item">
                             <div class="slider-quotes-item__iccon"><img src="img/quotes/MT.png" alt=""></div>
                             <div class="slider-quotes-item__text">
@@ -540,7 +575,8 @@
                     <div class="quotes__control">
                         <div class="quotes__row row-quotes">
                             <a href="#" class="row-quotes__arrow row-quotes__arrow_left"><span></span></a>
-                            <a href="#" href="#" class="row-quotes__resume"><img src="img/quotes/refresh.png" alt=""></a>
+                            <a href="#" href="#" class="row-quotes__resume"><img src="img/quotes/refresh.png"
+                                    alt=""></a>
                             <a href="#" class="row-quotes__arrow row-quotes__arrow_right"><span></span></a>
                         </div>
                     </div>
@@ -575,7 +611,8 @@
                                 </div>
                                 <div class="quotes-block-block">
                                     <div class="quotes-block-block__date">12.07.14</div>
-                                    <a href="#" class="quotes-block-block__text quotes-block-block__text_und"><strong>Уникальной
+                                    <a href="#"
+                                        class="quotes-block-block__text quotes-block-block__text_und"><strong>Уникальной
                                             Лакшери аукционе, здесь вы сможете найти</strong></a>
                                     <div class="quotes-block-block__text">
                                         <p>Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства

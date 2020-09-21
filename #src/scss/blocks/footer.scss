@@ -5,6 +5,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width:990px){
+            flex-direction: column;
+        }
     }
 
     &__logo {
@@ -12,6 +16,13 @@
 
     &__navigation {
         margin-left: 15px;
+        @media(max-width:990px){
+            margin-top: 15px;
+        }
+
+        @media(max-width:490px){
+            display: flex;
+        }
     }
 
     &__phone {
@@ -19,6 +30,14 @@
         font-size: 40px;
         line-height: 25px;
         padding-left: 15px;
+
+        @media(max-width:575px){
+            font-size: 34px;
+        }
+
+        @media(max-width:990px){
+            margin-top: 15px;
+        }
 
         sup {
             font-size: 25px;
@@ -30,17 +49,33 @@
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
+
+        @media(max-width:990px){
+            justify-content: center;
+        }
+        @media(max-width:340px){
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__copy {
         font-size: 14px;
         color: #bb9c66;
-    }
+   }
 
     &__connection {
         font-size: 14px;
         color: #bb9c66;
         position: relative;
+
+        @media(max-width:990px){
+            margin-left: 15px;
+        }
+
+        @media(max-width:340px){
+            margin-left: 0;
+        }
 
         &:hover{
             &:after{
@@ -74,9 +109,18 @@
     &-menu {
         &-list {
             display: flex;
+
+            @media(max-width:490px){
+                flex-direction: column;
+                margin-right: 25px;
+            }
             &__item {
                 & + & {
                     margin-left: 15px;
+
+                    @media(max-width:490px){
+                        margin-left: 0;
+                    }
                 }
             }
 
@@ -112,9 +156,17 @@
 
         &-list {
             display: flex;
+
+            @media(max-width:490px){
+                flex-direction: column;
+            }
             &__item {
                 & + & {
                     margin-left: 15px;
+
+                    @media(max-width:490px){
+                        margin-left: 0;
+                    }
                 }
             }
         }
